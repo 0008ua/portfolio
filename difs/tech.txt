@@ -1,0 +1,111 @@
+Angular
+The modern web developer's platform
+https://angular.io/
+
+React
+A JavaScript library for building user interfaces
+https://reactjs.org/
+
+Node.js
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine
+https://nodejs.org/en/
+
+MongoDB
+MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era
+https://www.mongodb.com/
+
+Mongoose
+Elegant mongoDB object modeling for node.js
+https://mongoosejs.com/
+
+RxJS
+Reactive Extensions Library for JavaScript
+https://rxjs.dev/
+
+NgRX
+Reactive State for Angular
+https://ngrx.io/
+
+Express
+Fast, unopinionated, minimalist web framework for Node.js
+https://expressjs.com/
+
+TypeScript
+JavaScript and More
+https://www.typescriptlang.org/
+
+Sass
+CSS with superpowers
+https://sass-lang.com/
+
+Cloudinary
+Developers and marketers use Cloudinary to quickly and easily create, manage and deliver their digital experiences across any browser, device and bandwidth
+https://cloudinary.com/
+
+Heroku
+Heroku provides services and tools to build, run, and scale web applications
+https://heroku.com/
+
+Cloudflare
+Protect and accelerate your websites, apps, and teams
+https://www.cloudflare.com/
+
+Ubuntu
+Data science workstations
+https://ubuntu.com/
+
+Nodemailer
+Nodemailer is a module for Node.js applications to allow easy as cake email sending
+https://nodemailer.com/
+
+Mailjet
+One platform to create, edit and send your emails as a team
+https://www.mailjet.com/
+
+Passport
+Simple, unobtrusive authentication for Node.js
+http://www.passportjs.org/
+
+Fabric
+Fabric.js is a powerful and simple Javascript HTML5 canvas library
+http://fabricjs.com/
+
+Date-fns
+Modern JavaScript date utility library
+https://date-fns.org/
+
+Ionic
+An open source mobile UI toolkit for building high quality, cross-platform native and web app experiences.
+https://ionicframework.com/
+
+NGX-Translate
+NGX-Translate is an internationalization library for Angular
+http://www.ngx-translate.com/
+
+Materialize
+A modern responsive front-end framework based on Material Design
+https://materializecss.com/
+
+Bootstrap
+Quickly design and customize responsive mobile-first sites with Bootstrap
+https://getbootstrap.com/
+
+React redux
+Official React bindings for Redux
+https://react-redux.js.org/
+
+SheetJS
+Read, edit, and export spreadsheets. Works in web browsers and servers
+https://sheetjs.com/
+
+HTML
+The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser
+https://en.wikipedia.org/wiki/HTML
+
+JS
+JavaScript is high-level, often just-in-time compiled, and multi-paradigm programming language
+https://en.wikipedia.org/wiki/JavaScript
+
+CSS
+Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language
+https://en.wikipedia.org/wiki/CSS

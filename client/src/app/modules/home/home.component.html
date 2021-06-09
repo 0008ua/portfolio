@@ -1,0 +1,46 @@
+<div appScrolling class="container">
+  <div class="row welcome-block">
+    <div class="col d-flex justify-content-center align-items-center">
+      <div class="welcome-block__feed col-10 offset-1">
+        <h1 class="leading-text leading-text_regular">Looking for a full stack<br>
+          <span class="leading-text leading-text_success leading-text_highlited"> web developer?</span><br>
+          <span class="leading-text leading-text_regular">or need a</span>
+          <span class="leading-text leading-text_success leading-text_highlited"> website?</span>
+        </h1>
+        <button type="button" class="btn btn-success btn-lg mx-auto text-nowrap text-white fw-bold">
+          CONTACT
+          <i class="bi bi-chevron-right ms-2"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="col d-flex justify-content-center align-items-center">
+      <img src="https://via.placeholder.com/400x300" alt="prewiew">
+    </div>
+  </div>
+</div>
+<div class="container" #recentProjects>
+  <div *ngFor="let project of projects" class="row project-block my-4">
+
+    <h2 class="col-10 offset-1 leading-text leading-text_regular">
+      <img [src]="project.logo" class="logo shadow-sm rounded">{{project.name}}
+    </h2>
+
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="img-container">
+        <img class="img-container__web" [src]="project.img.web" alt="prewiew">
+        <img class="img-container__mob" [src]="project.img.mob" alt="prewiew">
+      </div>
+    </div>
+    <div>
+      <p class="col-12 pt-4 text-center">{{project.description}}</p>
+      <div class="logo-block col-12 d-flex flex-wrap justify-content-around align-items-center">
+        <a *ngFor="let technology of project.technologies" [href]="(technology | tech).url">
+          <img class="logo-block_logo" selector-directive alt="prewiew" data-bs-toggle="tooltip" data-bs-html="true"
+            data-bs-placement="top" [src]="(technology | tech).logo"
+            title="<h3>{{(technology | tech).name}}</h3> <p>{{(technology | tech).description}}</p>">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

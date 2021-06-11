@@ -2,7 +2,8 @@ export interface Project {
   name: string;
   img: {
     mob: string,
-    web: string
+    mon: string,
+    tab: string,
   };
   logo: string;
   description: string;

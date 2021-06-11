@@ -90,6 +90,10 @@ Bootstrap
 Quickly design and customize responsive mobile-first sites with Bootstrap
 https://getbootstrap.com/
 
+Angular Material
+Material Design components for Angular
+https://material.angular.io/
+
 React redux
 Official React bindings for Redux
 https://react-redux.js.org/

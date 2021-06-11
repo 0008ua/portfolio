@@ -1,5 +1,5 @@
 // @import "~bootstrap/scss/bootstrap";
-@use 'sass:math';
+@use "sass:map";
 @import "./styles/bootstrap";
 @import "./styles/fonts-icons";
 
@@ -13,9 +13,8 @@
 .project-block {
   // min-height: calc(100vh - #{$nav-height});
   background-color: $white;
-  border: 1px solid $gray-300;
-  border-radius: .5rem;
-
+  border: 1px solid $white;
+  border-radius: 0.5rem;
 }
 
 .leading-text {
@@ -35,6 +34,9 @@
   }
   &_highlited {
     font-weight: 800;
+  }
+  &_info {
+    color: $info;
   }
 }
 
@@ -59,86 +61,161 @@
   }
 }
 
-$webH: 404px;
-$webW: 573px;
-$webRatio: ($webH/$webW); //.705
-$mobH: 334px;
-$mobW: 200px;
-$webRatio: ($mobH/$mobW); //.1.67
+$mobH: 300px;
+$mobW: 145px;
+$mobRatio: ($mobH/$mobW);
+$tabH: 300px;
+$tabW: 226px;
+$tabRatio: ($tabH/$tabW);
+$monH: 300px;
+$monW: 484px;
+$monRatio: ($monH/$monW);
+$img-container-heigth: (
+  "xs": 200px,
+  "sm": 230px,
+  "md": 300px,
+  "lg": 300px,
+  "xl": 300px,
+);
+$img-container-width: (
+  "xs": 100%,
+  "sm": 100%,
+  "md": 90%,
+  "lg": 80%,
+  "xl": 80%,
+);
 
-@function getWidthWeb($brakepoint) {
-  @if $brakepoint == "sm" {
-    @return (300 / $webRatio) + px;
-  } @else if $brakepoint == "md" {
-    @return (300 / $webRatio) + px; // 425
-  } @else if $brakepoint == "lg" {
-    @return (300 / $webRatio) + px;
-  } @else if $brakepoint == "xl" {
-    @return (300 / $webRatio) + px;
-  } @else {
-    @return (200 / $webRatio) + px;
-  }
+@function mobParams($brakepoint) {
+  $height: (
+    "xs": 125px,
+    "sm": 140px,
+    "md": 175px,
+    "lg": 175px,
+    "xl": 175px,
+  );
+
+  $offset: (
+    "xs": -50px,
+    "sm": -50px,
+    "md": -50px,
+    "lg": -50px,
+    "xl": -50px,
+  );
+  $width: ((map.get($height, $brakepoint) / $mobRatio));
+  @return ("width": $width, "height": map.get($height, $brakepoint), "offset": map.get($offset, $brakepoint));
 }
 
-@function getWidthMob($brakepoint) {
-  @if $brakepoint == "sm" {
-    @return (250 / $webRatio) + px;
-  } @else if $brakepoint == "md" {
-    @return (250 / $webRatio) + px; // 425
-  } @else if $brakepoint == "lg" {
-    @return (250 / $webRatio) + px;
-  } @else if $brakepoint == "xl" {
-    @return (250 / $webRatio) + px;
-  } @else {
-    @return (150 / $webRatio) + px;
-  }
+@function tabParams($brakepoint) {
+  $height: (
+    "xs": 175px,
+    "sm": 180px,
+    "md": 225px,
+    "lg": 225px,
+    "xl": 225px,
+  );
+  $offset: (
+    "xs": 70px,
+    "sm": 70px,
+    "md": 70px,
+    "lg": 70px,
+    "xl": 70px,
+  );
+  $width: ((map.get($height, $brakepoint) / $tabRatio));
+  @return ("width": $width, "height": map.get($height, $brakepoint), "offset": map.get($offset, $brakepoint));
+}
+
+@function monParams($brakepoint) {
+  $height: $img-container-heigth;
+  // $height: (
+  //   "xs": 200px,
+  //   "sm": 230px,
+  //   "md": 300px,
+  //   "lg": 300px,
+  //   "xl": 300px,
+  // );
+  $offset: (
+    "xs": 25px,
+    "sm": 25px,
+    "md": 30px,
+    "lg": 0px,
+    "xl": 0px,
+  );
+
+  $width: ((map.get($height, $brakepoint) / $monRatio));
+  @return ("width": $width, "height": map.get($height, $brakepoint), "offset": map.get($offset, $brakepoint));
 }
 
 .img-container {
   position: relative;
-  height: 280px;
-  width: 70%;
-  @include media-breakpoint-up(sm) {
-    height: 350px;
-  }
-  @include media-breakpoint-up(md) {
-    height: 350px;
+  @each $breakpoint in $breakpoints {
+    @include media-breakpoint-up(#{$breakpoint}) {
+      height: map.get($img-container-heigth, (#{$breakpoint}));
+      width: map.get($img-container-width, (#{$breakpoint}));
+    }
   }
 
-  &__web {
-    position: absolute;
-    width: auto;
-    height: 200px;
-    left: calc(calc(50% - (#{getWidthWeb("")} / 2)) - 50px);
-    @include media-breakpoint-up(sm) {
-      height: 300px;
-      left: calc(calc(50% - (#{getWidthWeb("sm")} / 2)) - 150px);
-    }
-    @include media-breakpoint-up(md) {
-      height: 300px;
-      left: calc(calc(50% - (#{getWidthWeb("md")} / 2)) - 150px);
-    }
-  }
   &__mob {
     position: absolute;
-    top: 50px;
-    left: calc(calc(50% - (#{getWidthMob("")} / 2)) + 50px);
+    bottom: 0;
     width: auto;
-    height: 150px;
-    @include media-breakpoint-up(sm) {
-      height: 250px;
-      left: calc(calc(50% - (#{getWidthMob("sm")} / 2)) + 150px);
+    @each $breakpoint in $breakpoints {
+      @include media-breakpoint-up(#{$breakpoint}) {
+        height: map.get(mobParams(#{$breakpoint}), "height");
+        left: calc(
+          calc(
+              calc(50% - (#{map.get(monParams(#{$breakpoint}), "width")} / 2)) + #{map.get(
+                  monParams(#{$breakpoint}),
+                  "offset"
+                )}
+            ) + #{map.get(monParams(#{$breakpoint}), "width")} + #{map.get(mobParams(#{$breakpoint}), "offset")}
+        );
+      }
     }
-    @include media-breakpoint-up(md) {
-      height: 250px;
-      left: calc(calc(50% - (#{getWidthMob("md")} / 2)) + 200px);
+  }
+
+  &__tab {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    @each $breakpoint in $breakpoints {
+      @include media-breakpoint-up(#{$breakpoint}) {
+        height: map.get(tabParams(#{$breakpoint}), "height");
+
+        left: calc(
+          calc(
+              calc(50% - (#{map.get(monParams(#{$breakpoint}), "width")} / 2)) + #{map.get(
+                  monParams(#{$breakpoint}),
+                  "offset"
+                )}
+            ) - #{map.get(tabParams(#{$breakpoint}), "width")} + #{map.get(tabParams(#{$breakpoint}), "offset")}
+        );
+      }
+    }
+  }
+
+  &__mon {
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    @each $breakpoint in $breakpoints {
+      @include media-breakpoint-up(#{$breakpoint}) {
+        height: map.get(monParams(#{$breakpoint}), "height");
+        left: calc(
+          calc(50% - (#{map.get(monParams(#{$breakpoint}), "width")} / 2)) + #{map.get(
+              monParams(#{$breakpoint}),
+              "offset"
+            )}
+        );
+      }
     }
   }
 }
 
 .navbar_scrolled-down {
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
 }
 .navbar_scrolled-up {
-  transform:translateY(0); transition: all 1s ease-in-out;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
 }

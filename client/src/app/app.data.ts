@@ -3,47 +3,66 @@ import { Project, Technology } from './interfaces';
 export const projects: Project[] = [{
   name: 'The Little Hotel',
   img: {
-    mob: './assets/projects/tlh-mob.png',
-    web: './assets/projects/tlh-web.png',
+    mob: './assets/projects/tlh-mob-300x.png',
+    tab: './assets/projects/tlh-tab-300x.png',
+    mon: './assets/projects/tlh-mon-300x.png',
   },
   logo: './assets/projects/tlh-logo.png',
   description: 'Represents small hotel scheduling management. Included business analytics and financial accounting. Responsive web and mobile application, built on Ionic technology.',
   url: 'https://thelittlehotel.herokuapp.com/',
   order: 0,
-  technologies: [
-    'ngrx', 'ionic', 'rxjs', 'angular', 'react',
-    'node', 'mongo', 'mongoose', 'express', 'typescript', 'sass', 'cloudinary', 'heroku',
-    'javascript', 'html', 'css'
+  technologies: ['typescript', 'javascript', 'html', 'css', 'sass',
+    'ionic', 'angular', 'ngrx', 'rxjs', 'ngx-translate', 'date-fns',
+    'node', 'express', 'mongo', 'mongoose', 'mailjet', 'passport', 'heroku',
   ],
 }, {
   name: 'HMADE - HandMADE',
   img: {
-    mob: './assets/projects/hmade-mob.png',
-    web: './assets/projects/hmade-web.png',
+    mob: './assets/projects/hmade-mob-300x.png',
+    tab: './assets/projects/hmade-tab-300x.png',
+    mon: './assets/projects/hmade-mon-300x.png',
   },
   logo: './assets/projects/hmade-logo.png',
-  description: 'Workshop of creativity. Gallery of handmade toys, decorations, bouquets etc. Responsive web and mobile application, built on Angular technology.',
+  description: 'Workshop of creativity. Gallery of handmade toys, decorations, bouquets etc. Responsive mon and mobile application, built on Angular technology.',
   url: 'https://hmade.work/',
   order: 1,
   technologies: [
-    'cloudflare', 'ubuntu', 'nodemailer', 'mailjet', 'passport', 'fabric',
-    'date-fns', 'ngx-translate', 'materialize', 'bootstrap', 'react-redux', 'sheetjs',
-    'javascript', 'html', 'css'
+    'typescript', 'javascript', 'html', 'css', 'sass',
+    'angular', 'ngrx', 'rxjs', 'ngx-translate', 'angular-material',
+    'node', 'express', 'mongo', 'mongoose', 'nodemailer', 'passport', 'fabric',
+    'cloudinary', 'heroku', 'cloudflare',
   ],
 }, {
   name: 'Graboplast floors',
   img: {
-    mob: './assets/projects/grabo-mob.png',
-    web: './assets/projects/grabo-web.png',
+    mob: './assets/projects/grabo-mob-300x.png',
+    tab: './assets/projects/grabo-tab-300x.png',
+    mon: './assets/projects/grabo-mon-300x.png',
   },
   logo: './assets/projects/grabo-logo.png',
   description: 'Presentation Catalog of floor coverings. Responsive web and mobile application, built on Angular technology.',
   url: 'https://graboplast.ua/',
   order: 1,
   technologies: [
-    'ngrx', 'ionic', 'rxjs', 'angular', 'react',
-    'node', 'mongo', 'mongoose', 'express', 'typescript', 'sass', 'cloudinary', 'heroku',
-    'cloudflare', 'ubuntu', 'nodemailer', 'mailjet', 'passport', 'fabric',
+    'typescript', 'javascript', 'html', 'css', 'sass',
+    'angular', 'rxjs', 'angular-material',
+    'node', 'express', 'mongo', 'mongoose', 'nodemailer', 'passport',
+    'cloudinary', 'ubuntu',
+  ],
+}, {
+  name: 'Xlsx - Json Converter',
+  img: {
+    mob: './assets/projects/xlsx-mob-300x.png',
+    tab: './assets/projects/xlsx-tab-300x.png',
+    mon: './assets/projects/xlsx-mon-300x.png',
+  },
+  logo: './assets/projects/xlsx-logo.png',
+  description: 'Xlsx - Json Converter utility. Responsive web and mobile application, built on React technology.',
+  url: 'https://xlsx-json-converter.herokuapp.com/',
+  order: 1,
+  technologies: [
+    'javascript', 'html', 'css', 'sass',
+    'react', 'react-redux', 'materialize', 'sheetjs', 'heroku',
   ],
 },
 ];
@@ -52,7 +71,7 @@ export const projects: Project[] = [{
 //   'ngrx', 'ionic', 'rxjs', 'angular', 'react',
 //   'node', 'mongo', 'mongoose', 'express', 'typescript', 'sass', 'cloudinary', 'heroku',
 //   'cloudflare', 'ubuntu', 'nodemailer', 'mailjet', 'passport', 'fabric',
-//   'date-fns', 'ngx-translate', 'materialize', 'bootstrap', 'react-redux', 'sheetjs',
+//   'date-fns', 'ngx-translate', 'materialize', 'bootstrap', 'angular-material', 'react-redux', 'sheetjs',
 //   'javascript', 'html', 'css'
 // ],
 
@@ -190,6 +209,13 @@ export const technologies: Technology[] = [{
   logo: './assets/logos/materialize.svg',
   description: 'A modern responsive front-end framework based on Material Design',
   url: 'https://materializecss.com/',
+},
+{
+  _id: 'angular-material',
+  name: 'Angular Material',
+  logo: './assets/logos/angular-material.png',
+  description: 'Material Design components for Angular',
+  url: 'https://material.angular.io/',
 },
 {
   _id: 'bootstrap',

@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
 import { HomeModule } from './modules/home/home.module';
 import { NavModule } from './modules/nav/nav.module';
 import { CommonModule } from '@angular/common';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import { CommonModule } from '@angular/common';
     NavModule,
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

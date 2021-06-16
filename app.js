@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const { ClientError, errorHandler, ServerError } = require('./server/errors');
 
 const { router } = require('./server/routes');
-const userRouter = require('./server/routes/user');
+const messageRouter = require('./server/routes/message');
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use(cookieParser());
 /**
  * all apis, api/404 will be handled here
  */
-app.use('/api/use', userRouter);
+app.use('/api/message', messageRouter);
 app.use('/api', (req, res, next) =>
   next(new ClientError({
     message: 'Wrong api',

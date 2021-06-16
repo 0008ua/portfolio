@@ -26,9 +26,6 @@ export class ScrollingDirective {
       this.storeService.scrolling(false);
       this.oldScroll = box.top;
     }
-    console.log('box.top', box.top);
-
-
   }
 
 }

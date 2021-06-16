@@ -8,7 +8,7 @@ export const projects: Project[] = [{
     mon: './assets/projects/tlh-mon-300x.png',
   },
   logo: './assets/projects/tlh-logo.png',
-  description: 'Represents small hotel scheduling management. Included business analytics and financial accounting. Responsive web and mobile application, built on Ionic technology.',
+  description: 'Represents small hotel scheduling management. Included business analytics and financial accounting. Responsive web and mobile application, based on Ionic framework.',
   url: 'https://thelittlehotel.herokuapp.com/',
   order: 0,
   technologies: ['typescript', 'javascript', 'html', 'css', 'sass',
@@ -23,7 +23,7 @@ export const projects: Project[] = [{
     mon: './assets/projects/hmade-mon-300x.png',
   },
   logo: './assets/projects/hmade-logo.png',
-  description: 'Workshop of creativity. Gallery of handmade toys, decorations, bouquets etc. Responsive mon and mobile application, built on Angular technology.',
+  description: 'Workshop of creativity. Gallery of handmade toys, decorations, bouquets etc. Responsive web and mobile application, based on Angular framework.',
   url: 'https://hmade.work/',
   order: 1,
   technologies: [
@@ -40,7 +40,7 @@ export const projects: Project[] = [{
     mon: './assets/projects/grabo-mon-300x.png',
   },
   logo: './assets/projects/grabo-logo.png',
-  description: 'Presentation Catalog of floor coverings. Responsive web and mobile application, built on Angular technology.',
+  description: 'Presentation Catalog of floor coverings. Responsive web and mobile application, based on Angular framework.',
   url: 'https://graboplast.ua/',
   order: 1,
   technologies: [
@@ -57,7 +57,7 @@ export const projects: Project[] = [{
     mon: './assets/projects/xlsx-mon-300x.png',
   },
   logo: './assets/projects/xlsx-logo.png',
-  description: 'Xlsx - Json Converter utility. Responsive web and mobile application, built on React technology.',
+  description: 'Xlsx - Json Converter utility. Responsive web and mobile application, based on React library.',
   url: 'https://xlsx-json-converter.herokuapp.com/',
   order: 1,
   technologies: [

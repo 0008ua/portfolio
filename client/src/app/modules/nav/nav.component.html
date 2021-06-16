@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark"
   [ngClass]="{'navbar_scrolled-down': isScrollingDown, 'navbar_scrolled-up': !isScrollingDown }">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand mx-3" [routerLink]="['/']">DevWeb</a>
     <button class="navbar-toggler" type="button" (click)="toggle()" aria-controls="navbarToggler" aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,19 +10,18 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
 
         <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="#">Projects</a>
+          <a class="nav-link" aria-current="page" [routerLink]="['/']" [routerLinkActiveOptions]="{exact: true}"
+            routerLinkActive="active">Home</a>
         </li>
-                <li class="nav-item mx-3">
-                  <a class="nav-link active" aria-current="page" href="#">Technologies</a>
-                </li>
         <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          <a class="nav-link" aria-current="page" [routerLink]="['tech']" [routerLinkActiveOptions]="{exact: true}"
+            routerLinkActive="active">Technologies</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" aria-current="page" [routerLink]="['contact']" [routerLinkActiveOptions]="{exact: true}"
+            routerLinkActive="active">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-<!-- [ngClass]="{'navbar_scrolled-down': isScrollingDown, 'fixed-top': !isScrollingDown, 'navbar_scrolled-up':
-!isScrollingDown }" -->
-<!-- [class.fixed-top]="!isScrollingDown" -->

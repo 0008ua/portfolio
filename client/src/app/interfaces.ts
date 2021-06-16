@@ -12,10 +12,17 @@ export interface Project {
   technologies: string[];
 }
 
- export interface Technology {
-   _id: string;
-   name: string;
-   logo: string;
-   description: string;
-   url: string;
- }
+export interface Technology {
+  _id: string;
+  name: string;
+  logo: string;
+  description: string;
+  url: string;
+}
+
+export interface Message {
+  text: string;
+  name: string;
+  email: string
+}
+

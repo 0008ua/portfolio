@@ -3,6 +3,11 @@
 @import "./styles/bootstrap";
 @import "./styles/fonts-icons";
 
+.contact {
+  height: calc(100vh - #{$nav-height});
+
+}
+
 .welcome-block {
   height: calc(100vh - #{$nav-height});
   &__feed {

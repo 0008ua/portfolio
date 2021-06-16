@@ -31,6 +31,24 @@ $teal:    #20c997;
 $cyan:    #0dcaf0;
 // scss-docs-end color-variables
 
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+// scss-docs-end colors-map
+
 // scss-docs-start theme-color-variables
 $primary:       $blue;
 $secondary:     $gray-600;
@@ -40,7 +58,22 @@ $warning:       $yellow;
 $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-900;
+$darker:        $gray-800;
 // scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "darker":     $darker,
+);
+// scss-docs-end theme-colors-map
 
 $tooltip-bg: $primary;
 $tooltip-opacity: 0.9;

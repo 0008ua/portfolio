@@ -12,6 +12,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "nconf": "^0.11.2",
+    "node-mailjet": "^3.3.4",
     "pug": "2.0.0-beta11",
     "winston": "^3.3.3"
   },

@@ -1,31 +1,34 @@
 <div appScrolling class="container">
   <div class="row welcome-block">
-    <div class="col d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
       <div class="welcome-block__feed col-10 offset-1">
         <h1 class="leading-text leading-text_regular">Looking for a full stack<br>
           <span class="leading-text leading-text_success leading-text_highlited"> web developer?</span><br>
           <span class="leading-text leading-text_regular">or need a</span>
           <span class="leading-text leading-text_success leading-text_highlited"> website?</span>
         </h1>
-        <button type="button" class="btn btn-success btn-lg mx-auto text-nowrap text-white fw-bold">
-          CONTACT
-          <i class="bi bi-chevron-right ms-2"></i>
-        </button>
+        <a class="btn btn-success btn-lg mx-auto text-nowrap text-white fw-bold" aria-current="page"
+          [routerLink]="['contact']" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">CONTACT
+          <i class="bi bi-chevron-right ms-2"></i></a>
       </div>
     </div>
-    <div class="col d-flex justify-content-center align-items-center">
-      <img src="https://via.placeholder.com/400x300" alt="preview">
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+      <img src="./assets/images/tag-light.png" width="250px" alt="preview">
     </div>
+    <div class="logo-block col-12 col-sm-10 offset-sm-1 d-flex flex-wrap justify-content-around align-items-center">
+      <a *ngFor="let technology of mainTechnologies" [href]="(technology | tech).url">
+        <img class="logo-block__logo logo-block__logo_main" appSelector alt="preview" data-bs-toggle="tooltip"
+          data-bs-html="true" data-bs-placement="top" [src]="(technology | tech).logo"
+          title="<h3>{{(technology | tech).name}}</h3> <p>{{(technology | tech).description}}</p>">
+      </a>
+    </div>
+
   </div>
 </div>
 
-
 <div class="container-fluid">
-
-  <div *ngFor="let project of projects" class="row project-block my-3">
-    <app-project [project]="project"></app-project>
-
-
+  <div *ngFor="let project of projects" class="project-block mb-3">
+    <app-project class="" [project]="project"></app-project>
   </div>
 </div>
 
@@ -34,6 +37,4 @@
     <a class="navbar-brand mx-3" [routerLink]="['/']">DevWeb</a>
     <a class="nav-link mx-3 text-light" aria-current="page" href="mailto:info@devweb.club">info@devweb.club</a>
   </div>
-
-
 </nav>

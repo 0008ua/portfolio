@@ -1,23 +1,24 @@
-<h2
-  class="col-10 offset-1 leading-text leading-text_regular leading-text_highlited pt-4 pb-5 d-flex justify-content-around align-items-center">
-  <span>{{project.name}}</span>
-  <!-- <img [src]="project.logo" class="logo shadow-sm rounded"> -->
-</h2>
+<div class="project-block__header header-block">
+  <h2 class="header-block__header leading-text leading-text_regular leading-text_highlited">
+    <span>{{project.name}}</span>
+  </h2>
+</div>
 
-<div class="d-flex justify-content-center align-items-center">
+
+<div class="project-block__img">
   <div class="img-container">
     <a [href]="project.url"><img class="img-container__mon" [src]="project.img.mon" alt="preview"></a>
     <a [href]="project.url"><img class="img-container__tab" [src]="project.img.tab" alt="preview"></a>
     <a [href]="project.url"><img class="img-container__mob" [src]="project.img.mob" alt="preview"></a>
   </div>
 </div>
-<div>
-  <p class="col-12 pt-5 text-center">{{project.description}}</p>
-  <div class="logo-block col-12 col-sm-10 offset-sm-1 d-flex flex-wrap justify-content-around align-items-center">
-    <a *ngFor="let technology of project.technologies" [href]="(technology | tech).url">
-      <img class="logo-block_logo" selector-directive alt="preview" data-bs-toggle="tooltip" data-bs-html="true"
+<!-- <div class=""> -->
+  <p class="project-block__description col-12 col-sm-10 offset-sm-1 text-center">{{project.description}}</p>
+  <div class="project-block__logo logo-block col-12 col-sm-10 offset-sm-1">
+    <a class="logo-block__link" *ngFor="let technology of project.technologies" [href]="(technology | tech).url">
+      <img class="logo-block__logo logo-block__logo_project " appSelector alt="preview" data-bs-toggle="tooltip" data-bs-html="true"
         data-bs-placement="top" [src]="(technology | tech).logo"
         title="<h3>{{(technology | tech).name}}</h3> <p>{{(technology | tech).description}}</p>">
     </a>
   </div>
-</div>
+<!-- </div> -->

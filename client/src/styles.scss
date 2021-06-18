@@ -4,12 +4,11 @@
 @import "./styles/fonts-icons";
 
 .contact {
-  height: calc(100vh - #{$nav-height});
-
+  min-height: calc(100vh - #{$nav-height});
 }
 
 .welcome-block {
-  height: calc(100vh - #{$nav-height});
+  min-height: calc(100vh - #{$nav-height});
   &__feed {
     margin: 2rem auto;
   }
@@ -18,8 +17,73 @@
 .project-block {
   // min-height: calc(100vh - #{$nav-height});
   background-color: $white;
-  border: 1px solid $white;
+  border: 1px solid $gray-400;
   border-radius: 0.5rem;
+  &__header {
+    // margin-top: 1rem;
+    // margin-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  &__description {
+    // display: inline-block;
+    margin-bottom: 2rem;
+  }
+  &__logo {
+    margin-bottom: 2rem;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // margin-bottom: 2rem;
+  }
+}
+
+.header-block {
+  &__header {
+    border-radius: 0.5rem 0.5rem 0 0;
+    // border-top: 1px solid $gray-400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $gray-300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.logo-block {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  &__link {
+  }
+  &__logo {
+    height: 30px;
+    width: auto;
+    transition-duration: 0.5s;
+    &_project {
+      margin: 1rem 1rem;
+      &:hover {
+        @extend .shadow-lg, .bg-light, .rounded;
+      }
+    }
+    &_main {
+      margin: 2rem 0.5rem;
+      &:hover {
+        @extend .shadow-lg, .rounded;
+        background-color: $gray-200;
+      }
+    }
+  }
 }
 
 .leading-text {
@@ -51,19 +115,6 @@
   margin: 0.5rem 1rem;
   // border: 1px solid $gray-400;
   // border-radius: 15%;
-}
-
-.logo-block {
-  // display: flex;
-  // flex-wrap: wrap;
-  // width: 100%;
-  // justify-content: space-around;
-  // align-items: center;
-  &_logo {
-    height: 30px;
-    width: auto;
-    margin: 2rem 0.5rem;
-  }
 }
 
 $mobH: 300px;
@@ -120,7 +171,7 @@ $img-container-width: (
     "xl": 225px,
   );
   $offset: (
-    "xs": 75px,
+    "xs": 70px,
     "sm": 70px,
     "md": 70px,
     "lg": 70px,

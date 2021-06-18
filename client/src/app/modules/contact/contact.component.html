@@ -1,7 +1,6 @@
-<div class="container-fluid contact text-light bg-darker d-flex justify-content-center align-items-center">
-
-  <!-- <div> -->
-    <form class="row" [formGroup]="messageForm" #messageFormDirective="ngForm">
+<div class="container-fluid  text-light bg-darker">
+  <div class="d-flex align-items-center contact flex-wrap">
+    <form class="row col-12" [formGroup]="messageForm" #messageFormDirective="ngForm">
       <div class="mb-3 col-sm-8 offset-sm-2">
         <label for="text" class="form-label">Please leave message here</label>
         <textarea class="form-control" id="text" rows="3" formControlName="text"></textarea>
@@ -17,20 +16,26 @@
       <button type="button" [disabled]="!messageForm.valid"
         class="btn btn-primary mb-3 col-10 offset-1 col-sm-6 offset-sm-3" (click)="sendMessageHandler()">Send</button>
     </form>
-  <!-- </div> -->
-
-  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
-    <div id="liveToast" #toast class="toast" [ngClass]="{'bg-danger': isAlertDanger}" role="alert" aria-live="assertive"
-      aria-atomic="true">
-      <div class="toast-header">
-        <strong class="me-auto">{{alertHeader}}</strong>
-        <small></small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body text-dark">
-        {{alertText}}
-      </div>
+    <div class="row col-12">
+      <p class="mb-3 col-sm-8 offset-sm-2">
+        Or send email <a class="text-light" aria-current="page" href="mailto:info@devweb.club">info@devweb.club</a>
+      </p>
     </div>
   </div>
+</div>
 
+
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+  <div id="liveToast" #toast class="toast" [ngClass]="{'bg-danger': isAlertDanger}" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">{{alertHeader}}</strong>
+      <small></small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body text-dark">
+      {{alertText}}
+    </div>
+  </div>
 </div>

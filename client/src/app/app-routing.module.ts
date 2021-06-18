@@ -12,10 +12,6 @@ const routes: Routes = [
     loadChildren: () => import('./modules/contact/contact.module').then((m) => m.ContactModule),
   },
   {
-    path: 'tech',
-    loadChildren: () => import('./modules/tech/tech.module').then((m) => m.TechModule),
-  },
-  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full',

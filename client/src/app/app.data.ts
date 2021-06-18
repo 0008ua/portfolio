@@ -67,14 +67,11 @@ export const projects: Project[] = [{
 },
 ];
 
-// technologies: [
-//   'ngrx', 'ionic', 'rxjs', 'angular', 'react',
-//   'node', 'mongo', 'mongoose', 'express', 'typescript', 'sass', 'cloudinary', 'heroku',
-//   'cloudflare', 'ubuntu', 'nodemailer', 'mailjet', 'passport', 'fabric',
-//   'date-fns', 'ngx-translate', 'materialize', 'bootstrap', 'angular-material', 'react-redux', 'sheetjs',
-//   'javascript', 'html', 'css'
-// ],
-
+export const mainTechnologies: string[] = [
+  'ionic', 'angular', 'react', 'redux', 'rxjs',
+  'node', 'mongo',
+  'typescript', 'javascript', 'html', 'css', 'sass',
+];
 
 export const technologies: Technology[] = [{
   _id: 'ionic',
@@ -259,5 +256,11 @@ export const technologies: Technology[] = [{
   description: 'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language',
   url: 'https://en.wikipedia.org/wiki/CSS',
 },
-
+{
+  _id: 'redux',
+  name: 'Redux',
+  logo: './assets/logos/redux.svg',
+  description: 'A Predictable State Container for JS Apps',
+  url: 'https://redux.js.org/',
+},
 ];

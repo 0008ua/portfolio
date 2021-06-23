@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1624012588833,
+  "timestamp": 1624436550430,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -14,12 +14,12 @@
         "/4.b7635e50d4730880c201.js",
         "/favicon.ico",
         "/index.html",
-        "/main.7be50c3a93be31fca0b2.js",
+        "/main.21a2846ccc2d1f784967.js",
         "/manifest.webmanifest",
         "/polyfills.a4021de53358bb0fec14.js",
         "/runtime.7476bab164fbb2ac8e9e.js",
         "/scripts.bfe7e755762a10a8aca9.js",
-        "/styles.610759c0c2b254b18769.css"
+        "/styles.041022a72dcb3991d471.css"
       ],
       "patterns": []
     },
@@ -51,6 +51,7 @@
         "/assets/logos/date-fns.png",
         "/assets/logos/express.svg",
         "/assets/logos/fabric.png",
+        "/assets/logos/firebase.svg",
         "/assets/logos/heroku.svg",
         "/assets/logos/html.png",
         "/assets/logos/ionic.png",
@@ -72,6 +73,9 @@
         "/assets/logos/sheetjs.png",
         "/assets/logos/typescript.png",
         "/assets/logos/ubuntu.png",
+        "/assets/projects/firebase-mob-300x.png",
+        "/assets/projects/firebase-mon-300x.png",
+        "/assets/projects/firebase-tab-300x.png",
         "/assets/projects/grabo-logo.png",
         "/assets/projects/grabo-mob-300x.png",
         "/assets/projects/grabo-mon-300x.png",
@@ -117,6 +121,7 @@
     "/assets/logos/date-fns.png": "5164c2a5ac0b8df5742ebf23d6fd31b757963b8d",
     "/assets/logos/express.svg": "13f0354c9dcb0418b06e983872ff6988b4941ea8",
     "/assets/logos/fabric.png": "0b2f1eb626074a07833e2d4ebbef98286f8335da",
+    "/assets/logos/firebase.svg": "b40e0920e765feba561d65e55beef2e6fa8591c2",
     "/assets/logos/heroku.svg": "2ad054bb8c354ed66444f2da0cf0ae94e67dc1e9",
     "/assets/logos/html.png": "4d78c2e9f73c0dfce70b7375879b413877ad6c48",
     "/assets/logos/ionic.png": "4d2a6a062103c4df01563d38c61761a94f23d7a9",
@@ -138,6 +143,9 @@
     "/assets/logos/sheetjs.png": "f733b5bd9c21ddcd387c8da8575f73d565c61a40",
     "/assets/logos/typescript.png": "f9b6148f82edfef8c4d2b3c483bbfae226284069",
     "/assets/logos/ubuntu.png": "8dd99b80526d1f9e597b02347da50cf47a5c9d38",
+    "/assets/projects/firebase-mob-300x.png": "c7db9bee2e1fcfa8478917ee42e21ba4dd4d926d",
+    "/assets/projects/firebase-mon-300x.png": "6dfcf430fa840974698d2bb0547a3e6bc2fd1298",
+    "/assets/projects/firebase-tab-300x.png": "7635035e3fa8df53318958d435f2484e329ca0cc",
     "/assets/projects/grabo-logo.png": "19097a869f8fe4ad62ec170192a8bccd07fcff4a",
     "/assets/projects/grabo-mob-300x.png": "5f167d22206d54c93152b9d2f6206cb1d68d4a0c",
     "/assets/projects/grabo-mon-300x.png": "ad944b72ca4e454e0780a20f9f7d56f21c00412c",
@@ -157,13 +165,13 @@
     "/bootstrap-icons.94eeade15e6b7fbed95b.woff": "cbfb7021638656cd7c9159e830cebdf9db059dff",
     "/bootstrap-icons.dfd0ea122577eb61795f.woff2": "4649877868a0068ce50b105d0d2a235e8010c98f",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "b92654b53a65bc1ef814a1edf386fc71a0bc85d6",
-    "/main.7be50c3a93be31fca0b2.js": "f145ae211630acadcfbfe1b2b0125ab07652e2f0",
+    "/index.html": "c63ca37562f0291d5edce2bcf3d366199afb8fd7",
+    "/main.21a2846ccc2d1f784967.js": "7b937e01a80fd53111141692421c40e45cea0a74",
     "/manifest.webmanifest": "6bd446cf481e91dc7da6926e0d9b5fb2029c63fa",
     "/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/runtime.7476bab164fbb2ac8e9e.js": "3fd8d16ff3ea6317d63d9a4f0b7f3eaa1d482a11",
     "/scripts.bfe7e755762a10a8aca9.js": "ec2f7cdc64c544c1704efc49f087cba4d8de3886",
-    "/styles.610759c0c2b254b18769.css": "0c0fa5859918cb1f8519c03c19a6b6cda83045eb"
+    "/styles.041022a72dcb3991d471.css": "1abdaae8872c51d8cd7b2eed15c215f9f9357a1c"
   },
   "navigationUrls": [
     {

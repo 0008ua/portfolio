@@ -23,7 +23,7 @@ export const projects: Project[] = [{
     mon: './assets/projects/hmade-mon-300x.png',
   },
   logo: './assets/projects/hmade-logo.png',
-  description: 'Workshop of creativity. Gallery of handmade toys, decorations, bouquets etc. Responsive web and mobile application, based on Angular framework.',
+  description: 'Workshop of creativity. Gallery of handmade toys, decorations, bouquets etc. Multilingual responsive web and mobile application, based on Angular framework.',
   url: 'https://hmade.work/',
   order: 1,
   technologies: [
@@ -40,9 +40,9 @@ export const projects: Project[] = [{
     mon: './assets/projects/grabo-mon-300x.png',
   },
   logo: './assets/projects/grabo-logo.png',
-  description: 'Presentation Catalog of floor coverings. Responsive web and mobile application, based on Angular framework.',
+  description: 'Presentation catalog of floor coverings. Responsive web and mobile application, based on Angular framework.',
   url: 'https://graboplast.ua/',
-  order: 1,
+  order: 2,
   technologies: [
     'typescript', 'javascript', 'html', 'css', 'sass',
     'angular', 'rxjs', 'angular-material',
@@ -59,12 +59,29 @@ export const projects: Project[] = [{
   logo: './assets/projects/xlsx-logo.png',
   description: 'Xlsx - Json Converter utility. Responsive web and mobile application, based on React library.',
   url: 'https://xlsx-json-converter.herokuapp.com/',
-  order: 1,
+  order: 3,
   technologies: [
     'javascript', 'html', 'css', 'sass',
     'react', 'react-redux', 'materialize', 'sheetjs', 'heroku',
   ],
+}, {
+  name: 'Single page application template',
+  img: {
+    mob: './assets/projects/firebase-mob-300x.png',
+    tab: './assets/projects/firebase-tab-300x.png',
+    mon: './assets/projects/firebase-mon-300x.png',
+  },
+  logo: './assets/projects/xlsx-logo.png',
+  description: 'Multilingual responsive Single Page Application template. Built with Angular framework. Includes feedback module based on Firebase.',
+  url: 'https://fireapp-dfee7.firebaseapp.com/',
+  order: 4,
+  technologies: [
+    'typescript', 'javascript', 'html', 'css', 'sass',
+    'angular', 'ngrx', 'rxjs', 'ngx-translate', 'angular-material',
+    'firebase'
+  ],
 },
+
 ];
 
 export const mainTechnologies: string[] = [
@@ -263,4 +280,11 @@ export const technologies: Technology[] = [{
   description: 'A Predictable State Container for JS Apps',
   url: 'https://redux.js.org/',
 },
+  {
+    _id: 'firebase',
+    name: 'Firebase',
+    logo: './assets/logos/firebase.svg',
+    description: 'Firebase helps you build and run successful apps',
+    url: 'https://firebase.google.com/',
+  },
 ];

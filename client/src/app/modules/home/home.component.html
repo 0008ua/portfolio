@@ -2,7 +2,7 @@
   <div class="row welcome-block">
     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
       <div class="welcome-block__feed col-10 offset-1">
-        <h1 class="leading-text leading-text_regular">Looking for a full stack<br>
+        <h1 class="leading-text leading-text_regular">Looking for a full-stack<br>
           <span class="leading-text leading-text_success leading-text_highlited"> web developer?</span><br>
           <span class="leading-text leading-text_regular">or need a</span>
           <span class="leading-text leading-text_success leading-text_highlited"> website?</span>
@@ -19,7 +19,10 @@
       <a *ngFor="let technology of mainTechnologies" [href]="(technology | tech).url">
         <img class="logo-block__logo logo-block__logo_main" appSelector alt="preview" data-bs-toggle="tooltip"
           data-bs-html="true" data-bs-placement="top" [src]="(technology | tech).logo"
-          title="<h3>{{(technology | tech).name}}</h3> <p>{{(technology | tech).description}}</p>">
+          title="
+          <h3>{{(technology | tech).name}}</h3>
+           <p>{{(technology | tech).description}}</p>
+           ">
       </a>
     </div>
 

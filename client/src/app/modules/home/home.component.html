@@ -29,11 +29,11 @@
 
 <div class="container-fluid">
   <h2 class="main__projects-header leading-text leading-text_info leading-text_highlited">
-    <a (click)="moveTo(4)"><span>Recent projects</span><i class="fas fa-angle-down ms-2"></i></a>
+    <a (click)="moveTo(0)"><span>Recent projects</span><i class="fas fa-angle-down ms-2"></i></a>
   </h2>
 
-  <section *ngFor="let project of projects; let i=index" class="project mb-3" >
-    <app-project [project]="project" [i]="i"></app-project>
+  <section *ngFor="let project of projects" class="project mb-3" >
+    <app-project [project]="project"></app-project>
   </section>
 </div>
 

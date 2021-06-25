@@ -17,7 +17,7 @@ export class ProjectComponent implements OnInit, AfterViewInit {
   @ViewChild('recentProject', { read: ElementRef }) recentProject: ElementRef;
 
   @Input('project') project: Project;
-  @Input('i') i: number;
+
   constructor() { }
 
   ngOnInit(): void {

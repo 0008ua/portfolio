@@ -7,7 +7,7 @@
   min-height: calc(100vh - #{$nav-height});
 }
 
-.welcome-block {
+.main {
   min-height: calc(100vh - (#{$nav-height} * 2));
   &__feed {
     margin: 1rem auto;
@@ -18,61 +18,50 @@
       margin: 1rem auto;
     }
   }
+  &__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 }
 
-.project-block {
-  // min-height: calc(100vh - #{$nav-height});
+.project {
   background-color: $white;
   border: 1px solid $gray-400;
   border-radius: 0.5rem;
   &__header {
-    // margin-top: 1rem;
-    // margin-bottom: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   &__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 2rem;
   }
   &__description {
-    // display: inline-block;
     margin-bottom: 2rem;
   }
-  &__logo {
+  &__logos {
     margin-bottom: 2rem;
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // margin-bottom: 2rem;
   }
 }
 
-.header-block {
-  &__header {
-    border-radius: 0.5rem 0.5rem 0 0;
-    // border-top: 1px solid $gray-400;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: $gray-300;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
+.project-header {
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: $gray-300;
+  text-align: center;
+  padding: 1rem 0.5rem;
 }
 
-.logo-block {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.project-description {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.logos {
+  padding: .5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  &__link {
-  }
-  &__logo {
+  &__img {
     height: 30px;
     width: auto;
     transition-duration: 0.5s;
@@ -94,10 +83,6 @@
 
 .leading-text {
   font-weight: 700;
-  // font-size: 3.25rem!important;
-  // line-height: 3.5rem !important;
-  // margin-bottom: 1rem;
-  // margin-top: 1rem;
   &_regular {
     color: $dark;
   }
@@ -119,8 +104,6 @@
   height: 60px;
   width: auto;
   margin: 0.5rem 1rem;
-  // border: 1px solid $gray-400;
-  // border-radius: 15%;
 }
 
 $mobH: 300px;
@@ -208,15 +191,19 @@ $img-container-width: (
   @return ("width": $width, "height": map.get($height, $brakepoint), "offset": map.get($offset, $brakepoint));
 }
 
-.img-container {
-  position: relative;
-  @each $breakpoint in $breakpoints {
-    @include media-breakpoint-up(#{$breakpoint}) {
-      height: map.get($img-container-heigth, (#{$breakpoint}));
-      width: map.get($img-container-width, (#{$breakpoint}));
+.devices-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    position: relative;
+    @each $breakpoint in $breakpoints {
+      @include media-breakpoint-up(#{$breakpoint}) {
+        height: map.get($img-container-heigth, (#{$breakpoint}));
+        width: map.get($img-container-width, (#{$breakpoint}));
+      }
     }
   }
-
   &__mob {
     position: absolute;
     bottom: 0;

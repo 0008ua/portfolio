@@ -1,6 +1,6 @@
 import { SelectorDirective } from './../../../directives/selector.directive';
 import { Project } from './../../../interfaces';
-import { AfterViewInit, Component, Directive, ElementRef, Input, OnInit, ViewChildren, QueryList } from '@angular/core';
+import { AfterViewInit, Component, Directive, ElementRef, Input, OnInit, ViewChildren, QueryList, ViewChild } from '@angular/core';
 import { Tooltip } from 'bootstrap';
 
 @Directive({ selector: '[selector-directive]' })
@@ -14,16 +14,20 @@ export class ChildDirective {
 })
 export class ProjectComponent implements OnInit, AfterViewInit {
   @ViewChildren(SelectorDirective, { read: ElementRef }) tooltips: QueryList<any>;
+  @ViewChild('recentProject', { read: ElementRef }) recentProject: ElementRef;
 
   @Input('project') project: Project;
+  @Input('i') i: number;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  moveTo() {
+    this.recentProject.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
 
   ngAfterViewInit() {
-
     this.tooltips.map((el) => {
       new Tooltip(el.nativeElement, {
         container: 'body'

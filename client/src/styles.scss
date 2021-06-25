@@ -19,9 +19,24 @@
     }
   }
   &__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__projects-header {
+    padding: 2rem;
+
+    a {
+      transition-duration: 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        color: $success !important;
+      }
+    }
+    i {
+      vertical-align: middle;
+    }
   }
 }
 
@@ -29,6 +44,7 @@
   background-color: $white;
   border: 1px solid $gray-400;
   border-radius: 0.5rem;
+
   &__header {
     margin-bottom: 2rem;
   }
@@ -56,7 +72,7 @@
 }
 
 .logos {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

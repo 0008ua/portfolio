@@ -17,9 +17,8 @@
     </div>
     <div class="logos col-12 col-sm-10 offset-sm-1">
       <a *ngFor="let technology of mainTechnologies" [href]="(technology | tech).url">
-        <img class="logos__img logos__img_main" appSelector alt="preview" data-bs-toggle="tooltip"
-          data-bs-html="true" data-bs-placement="top" [src]="(technology | tech).logo"
-          title="
+        <img class="logos__img logos__img_main" appSelector alt="preview" data-bs-toggle="tooltip" data-bs-html="true"
+          data-bs-placement="top" [src]="(technology | tech).logo" title="
           <h3>{{(technology | tech).name}}</h3>
            <p>{{(technology | tech).description}}</p>
            ">
@@ -29,13 +28,18 @@
 </div>
 
 <div class="container-fluid">
-  <section *ngFor="let project of projects" class="project mb-3">
-    <app-project [project]="project"></app-project>
+  <h2 class="main__projects-header leading-text leading-text_info leading-text_highlited">
+    <a (click)="moveTo(4)"><span>Recent projects</span><i class="fas fa-angle-down ms-2"></i></a>
+  </h2>
+
+  <section *ngFor="let project of projects; let i=index" class="project mb-3" >
+    <app-project [project]="project" [i]="i"></app-project>
   </section>
 </div>
 
 <nav class="navbar navbar-dark bg-dark text-light">
   <div class="container-fluid">
+
     <a class="navbar-brand mx-3" [routerLink]="['/']">DevWeb</a>
     <a class="nav-link mx-3 text-light" aria-current="page" href="mailto:info@devweb.club">info@devweb.club</a>
   </div>

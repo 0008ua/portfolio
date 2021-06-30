@@ -9,6 +9,19 @@
 
 .main {
   min-height: calc(100vh - (#{$nav-height} * 2));
+  margin-top: 2rem;
+  transition: 1s;
+  background: url("/assets/images/globe-map-white.svg") center center / auto no-repeat;
+  &:hover {
+    background: url("/assets/images/globe-map.svg") center center / auto no-repeat;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    background: none;
+    &:hover {
+      background: none;
+    }
+  }
   &__feed {
     margin: 1rem auto;
   }
@@ -22,6 +35,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media-breakpoint-up(lg) {
+      background: url("/assets/images/globe-map-lighter.svg") center center / auto no-repeat;
+      margin: 2rem 0;
+      transition: 1s;
+      padding: 0;
+
+      &:hover {
+        background: url("/assets/images/globe-map.svg") center center / auto no-repeat;
+        margin: 1rem 0;
+        padding: 1rem 0;
+      }
+    }
   }
   &__projects-header {
     padding: 2rem;

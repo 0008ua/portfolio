@@ -86,8 +86,8 @@ export const projects: Project[] = [{
 
 export const mainTechnologies: string[] = [
   'ionic', 'angular', 'react', 'redux', 'rxjs',
-  'node', 'mongo',
-  'typescript', 'javascript', 'html', 'css', 'sass',
+  'node',
+  'typescript', 'javascript', 'html', 'css', 'sass', 'mongo',
 ];
 
 export const technologies: Technology[] = [{

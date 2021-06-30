@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1624617796746,
+  "timestamp": 1625071632146,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -14,12 +14,12 @@
         "/4.ed73b2eb4c9120e8940f.js",
         "/favicon.ico",
         "/index.html",
-        "/main.69c2730677069d4655f5.js",
+        "/main.c6aa6918c96f33248499.js",
         "/manifest.webmanifest",
         "/polyfills.a4021de53358bb0fec14.js",
         "/runtime.89c1484dd81a7ab5c278.js",
         "/scripts.bfe7e755762a10a8aca9.js",
-        "/styles.1ce596aa00af639507e5.css"
+        "/styles.652410d596ac2ecc86a3.css"
       ],
       "patterns": []
     },
@@ -40,8 +40,11 @@
         "/assets/icons/icon-72x72.png",
         "/assets/icons/icon-96x96.png",
         "/assets/images/browser.png",
+        "/assets/images/globe-map-lighter.svg",
+        "/assets/images/globe-map-white.svg",
+        "/assets/images/globe-map.svg",
         "/assets/images/laptop.png",
-        "/assets/images/tag-light.png",
+        "/assets/images/tag.png",
         "/assets/logos/angular-material.png",
         "/assets/logos/angular.png",
         "/assets/logos/bootstrap.svg",
@@ -110,8 +113,11 @@
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/assets/images/browser.png": "70afeeaba952ccbc359658db3fefe8a77e26bdbb",
+    "/assets/images/globe-map-lighter.svg": "b0eb01fc39ff1efb5319cf1ae0782b978054dd53",
+    "/assets/images/globe-map-white.svg": "00ea5564854a5322c543e41003d3d1c35f9b0407",
+    "/assets/images/globe-map.svg": "689841eb4bcdfb731110a5602f65314c43a6a0ab",
     "/assets/images/laptop.png": "4efd23fcc9685848cb15f4a9e400f2f43987f532",
-    "/assets/images/tag-light.png": "8097b17c2ba8652f47b0815c5658d6ec62c1c3d1",
+    "/assets/images/tag.png": "8097b17c2ba8652f47b0815c5658d6ec62c1c3d1",
     "/assets/logos/angular-material.png": "8febeeb62fa798344e20876e8de8461f9032882f",
     "/assets/logos/angular.png": "f0191f8d50460c560d9e28b29e849b4f44ed0bf4",
     "/assets/logos/bootstrap.svg": "7d1799801f74c0b0b44ce2d0d60a03ee3663163d",
@@ -165,13 +171,13 @@
     "/bootstrap-icons.94eeade15e6b7fbed95b.woff": "cbfb7021638656cd7c9159e830cebdf9db059dff",
     "/bootstrap-icons.dfd0ea122577eb61795f.woff2": "4649877868a0068ce50b105d0d2a235e8010c98f",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "f850330c4fae4de649e46ac3e169e7310b15c4e3",
-    "/main.69c2730677069d4655f5.js": "572752b00927bccb1a31c199041a38ab3605e3cc",
+    "/index.html": "6681f77d30cebbaa0594864b9ff7cbd3f970dac1",
+    "/main.c6aa6918c96f33248499.js": "8aa171e47f1dce6c346ec9bb9e2a4156c76d8e66",
     "/manifest.webmanifest": "6bd446cf481e91dc7da6926e0d9b5fb2029c63fa",
     "/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/runtime.89c1484dd81a7ab5c278.js": "edf4465ec4c3458eb663eadedab47b4a4c27f9ed",
     "/scripts.bfe7e755762a10a8aca9.js": "ec2f7cdc64c544c1704efc49f087cba4d8de3886",
-    "/styles.1ce596aa00af639507e5.css": "5c6b33501ba523a8edee583368cfabfbd00ef322"
+    "/styles.652410d596ac2ecc86a3.css": "f10940e99f6984f06b113d7d6e90cf2aa11991c4"
   },
   "navigationUrls": [
     {

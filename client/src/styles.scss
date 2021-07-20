@@ -310,3 +310,13 @@ $img-container-width: (
   transform: translateY(0);
   transition: all 1s ease-in-out;
 }
+
+.move-btn {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  &__item {
+    display: block;
+    opacity: 0.5;
+  }
+}

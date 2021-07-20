@@ -1,3 +1,4 @@
+import { StoreService } from './../../../services/store.service';
 import { SelectorDirective } from './../../../directives/selector.directive';
 import { Project } from './../../../interfaces';
 import { AfterViewInit, Component, Directive, ElementRef, Input, OnInit, ViewChildren, QueryList, ViewChild } from '@angular/core';
@@ -18,7 +19,9 @@ export class ProjectComponent implements OnInit, AfterViewInit {
 
   @Input('project') project: Project;
 
-  constructor() { }
+  constructor(
+    private storeService: StoreService,
+  ) { }
 
   ngOnInit(): void {
   }

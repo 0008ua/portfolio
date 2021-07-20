@@ -6,6 +6,7 @@ import { Observable, Subject } from 'rxjs';
 })
 export class StoreService {
   scrolling$ = new Subject<boolean>();
+  elementOnScreenIdx$ = new Subject<number>();
 
   constructor() { }
 
@@ -15,5 +16,13 @@ export class StoreService {
 
   scrollingHandler(): Observable<boolean> {
     return this.scrolling$;
+  }
+
+  elementOnScreenIdx(idx: number): void {
+    this.elementOnScreenIdx$.next(idx);
+  }
+
+  elementOnScreenIdxHandler(): Observable<number> {
+    return this.elementOnScreenIdx$;
   }
 }

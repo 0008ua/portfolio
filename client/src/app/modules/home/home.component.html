@@ -2,7 +2,7 @@
   <section class="row main">
     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
       <div class="main__feed col-10 offset-1">
-        <h1 class="leading-text leading-text_regular">Looking for a full-stack<br>
+        <h1 class="leading-text leading-text_regular">Looking for a full stack<br>
           <span class="leading-text leading-text_success leading-text_highlited"> web developer?</span><br>
           <span class="leading-text leading-text_regular">or need a</span>
           <span class="leading-text leading-text_success leading-text_highlited"> website?</span>
@@ -13,11 +13,11 @@
       </div>
     </div>
     <div class="main__img col-12 col-md-6">
-      <img src="./assets/images/tag.png" width="250px" alt="preview">
+      <img src="./assets/images/tag.png" width="250px" height="150px" alt="preview">
     </div>
     <div class="logos col-12 col-sm-10 offset-sm-1">
       <a *ngFor="let technology of mainTechnologies" [href]="(technology | tech).url">
-        <img class="logos__img logos__img_main" appSelector alt="preview" data-bs-toggle="tooltip" data-bs-html="true"
+        <img class="logos__img logos__img_main" appSelector [alt]="(technology | tech).name" data-bs-toggle="tooltip" data-bs-html="true"
           data-bs-placement="top" [src]="(technology | tech).logo" title="
           <h3>{{(technology | tech).name}}</h3>
            <p>{{(technology | tech).description}}</p>

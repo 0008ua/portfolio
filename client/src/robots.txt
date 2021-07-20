@@ -1,0 +1,2 @@
+Sitemap: https://devweb.club/sitemap.xml
+User-agent:*

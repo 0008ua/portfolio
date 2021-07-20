@@ -61,7 +61,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   moveToTop() {
-    this.top.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    const headerOffset = 45;
+    const elementPosition = this.top.nativeElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+    // this.top.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
   ngAfterViewInit() {

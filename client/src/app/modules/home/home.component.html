@@ -1,5 +1,5 @@
 <div appScrolling #top [id]="-1" class="container">
-  <section  class="row main">
+  <section class="row main">
 
     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
       <div class="main__feed col-10 offset-1">
@@ -47,13 +47,13 @@
 </nav>
 
 <div class="move-btn">
-  <button class="btn btn-success btn-sm move-btn__item text-white fw-bold mb-1" (click)="moveTo(false)"
-    [disabled]="currentMoveIndex < 0" [ngClass]="{'btn-dark': currentMoveIndex < 0}">
+  <button class="btn btn-success btn-sm move-btn__item fw-bold mb-2" (click)="moveTo(false)"
+    [disabled]="currentMoveIndex < 0" [ngClass]="currentMoveIndex < 0 ? 'btn-outline-dark text-dark': 'text-white'">
     <i class="bi bi-chevron-up"></i>
   </button>
-  <button class="btn btn-success succes btn-sm move-btn__item text-white fw-bold" (click)="moveTo(true)"
+  <button class="btn btn-success succes btn-sm move-btn__item fw-bold" (click)="moveTo(true)"
     [disabled]="currentMoveIndex >= projects.length - 1"
-    [ngClass]="{'btn-dark': currentMoveIndex >= projects.length - 1}">
+    [ngClass]="currentMoveIndex >= projects.length - 1 ? 'btn-outline-dark text-dark': 'text-white'">
     <i class="bi bi-chevron-down"></i>
   </button>
 </div>

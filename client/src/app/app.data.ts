@@ -8,7 +8,7 @@ export const projects: Project[] = [{
     mon: './assets/projects/tlh-mon-300x.png',
   },
   logo: './assets/projects/tlh-logo.png',
-  description: 'Represents small hotel scheduling management. Included business analytics and financial accounting. Responsive web and mobile application, based on Ionic framework.',
+  description: 'Represents small hotel scheduling management. Included business analytics and financial accounting. Responsive web and mobile application, based on Ionic framework. Demonstration account: login demo, password demonstration',
   url: 'https://thelittlehotel.herokuapp.com/',
   order: 0,
   technologies: ['typescript', 'javascript', 'html', 'css', 'sass',

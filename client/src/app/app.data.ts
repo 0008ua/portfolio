@@ -11,7 +11,7 @@ export const projects: Project[] = [
     logo: './assets/projects/tlh-logo.png',
     description:
       'Represents small hotel scheduling management. Included business analytics and financial accounting. Responsive web and mobile application, based on Ionic framework. Demonstration account: login demo, password demonstration',
-    url: 'https://littlehotel.onrenderer.com/',
+    url: 'https://littlehotel.onrender.com/',
     order: 0,
     technologies: [
       'typescript',
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     logo: './assets/projects/xlsx-logo.png',
     description:
       'Xlsx - Json Converter utility. Responsive web and mobile application, based on React library.',
-    url: 'https://xlsx-json-converter.onrenderer.com/',
+    url: 'https://xlsx-json-converter.onrender.com/',
     order: 3,
     technologies: [
       'javascript',

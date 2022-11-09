@@ -27,6 +27,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
       .subscribe(idx => this.currentMoveIndex = idx)
   }
 
+  ngAfterViewInit() {
+    this.tooltips.map((el) => {
+      new Tooltip(el.nativeElement, {
+        container: 'body'
+      });
+    });
+    this.moveToTop();
+  }
+
   moveTo(isMoveDown: boolean) {
     if (isMoveDown) {
       this.storeService.elementOnScreenIdx(this.currentMoveIndex + 1);
@@ -72,12 +81,5 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // this.top.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
-  ngAfterViewInit() {
-    this.tooltips.map((el) => {
-      new Tooltip(el.nativeElement, {
-        container: 'body'
-      });
-    });
-    this.moveToTop();
-  }
+
 }

@@ -11,7 +11,7 @@ export const projects: Project[] = [
     logo: './assets/projects/tlh-logo.png',
     description:
       'Represents small hotel scheduling management. Included business analytics and financial accounting. Responsive web and mobile application, based on Ionic framework. Demonstration account: login demo, password demonstration',
-    url: 'https://thelittlehotel.onrenderer.com/',
+    url: 'https://littlehotel.onrenderer.com/',
     order: 0,
     technologies: [
       'typescript',

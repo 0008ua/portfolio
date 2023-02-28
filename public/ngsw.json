@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1667992410017,
+  "timestamp": 1677584558520,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "/4.ed73b2eb4c9120e8940f.js",
         "/favicon.ico",
         "/index.html",
-        "/main.799dfc6cbae0854efed4.js",
+        "/main.3fa2556abf106086382f.js",
         "/manifest.webmanifest",
         "/polyfills.a4021de53358bb0fec14.js",
         "/runtime.89c1484dd81a7ab5c278.js",
@@ -64,6 +64,7 @@
         "/assets/logos/materialize.svg",
         "/assets/logos/mongodb.png",
         "/assets/logos/mongoose.png",
+        "/assets/logos/nestjs.svg",
         "/assets/logos/ngrx.svg",
         "/assets/logos/ngx-translate.png",
         "/assets/logos/node.png",
@@ -136,6 +137,7 @@
     "/assets/logos/materialize.svg": "6b01c1b71b337aac6ee733f1ed5daabf9fac3b7f",
     "/assets/logos/mongodb.png": "c26bcc25c94d09da090f75812d4cb75b1a7fe182",
     "/assets/logos/mongoose.png": "c211c476e47586da1743d1efcf4e768030770027",
+    "/assets/logos/nestjs.svg": "e937e774cbbe23635999615ad5d7732decad182a",
     "/assets/logos/ngrx.svg": "25cc2cd2158ee5bf052519c51c3de3a2b4fea0cd",
     "/assets/logos/ngx-translate.png": "2ef08ebb61a60462c45e513820f8710100d5dffc",
     "/assets/logos/node.png": "8309589c5cc929aaffb2dacea6866f55d0199e03",
@@ -169,8 +171,8 @@
     "/assets/projects/xlsx-mon-300x.png": "ec58f66c1f48fe27be7610cfeb684f4c0d16335a",
     "/assets/projects/xlsx-tab-300x.png": "f448db38d177755334f0fd11cb4fc9fe0e115979",
     "/favicon.ico": "e9aa5296cd1eb6083b3a9b54878f5a56e2c08b2c",
-    "/index.html": "4f996ee5c4ebd4d0171778547e7d4af7e4418db2",
-    "/main.799dfc6cbae0854efed4.js": "2150506e778117594a5c36addaae25962044b614",
+    "/index.html": "e82f9f63c6347eaa7c656073d4bf7ad0d6f4c668",
+    "/main.3fa2556abf106086382f.js": "07ab6c8fc71ed4449f10c86845f33a2e924a89a9",
     "/manifest.webmanifest": "605dfc89b1c053da2014a31b2816dfb196e3d3bc",
     "/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/runtime.89c1484dd81a7ab5c278.js": "edf4465ec4c3458eb663eadedab47b4a4c27f9ed",

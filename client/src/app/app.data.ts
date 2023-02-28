@@ -4,9 +4,9 @@ export const projects: Project[] = [
   {
     name: 'Points',
     img: {
-      mob: './assets/projects/tlh-mob-300x.png',
-      tab: './assets/projects/tlh-tab-300x.png',
-      mon: './assets/projects/tlh-mon-300x.png',
+      mob: './assets/projects/points-mob-300x.png',
+      tab: './assets/projects/points-tab-300x.png',
+      mon: './assets/projects/points-mon-300x.png',
     },
     logo: './assets/projects/tlh-logo.png',
     description: 'Score calculator for popular games',
